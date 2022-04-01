@@ -64,6 +64,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 24px;
     font-weight: 400;
     line-height: 1.5;
+
+    color: #fff;
 }
 
 .navbar {
@@ -127,11 +129,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Location
 ==================== */
-/* .location__inner {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-} */
 
 .title {
     margin-top: 140px;
