@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@500;700&family=Ribeye&family=Roboto:wght@400;500&display=swap');
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 1.5;
+
     color: #000;
 }
 
@@ -13,104 +20,158 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 43px;
     font-weight: 500;
     line-height: 1.4;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-button {
-    background-color: #C9453B;
-    border-radius: 5px;
-    border: none;
-
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #fff;
-
-    cursor: pointer;
+    color: #000;
 }
 
 .container {
-    margin: 0 230px;
-    width: 100%;
+    max-width: 1600px;
+    margin-left: 230px;
+    margin-right: 230px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-/* Header
+/* Button
 ================== */
-.header {
-    display: flex;
-    flex-wrap: wrap;
 
-    background-image: url(../images/header/background.jpg);background-color:#00000054;
-    background-blend-mode: hard-light;
-    background-repeat: no-repeat;
-    background-size: cover;
+.button {
+    padding: 15px 35px;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    color:#fff;
 
-    color: #fff;
+    background-color: #C9453B;
+    border: none;
+    border-radius: 5px;
 }
 
-.navigation {
+.button--info {
+    margin-bottom: 245px;
+    padding: 15px 45px;
+}
+/* Nav
+==================*/
+.nav {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-
-    margin: 35px 0 200px;
-
+    align-items: center;
+    padding-top: 45px;
 }
 
 .title-logo {
     font-family: 'Ribeye', cursive;
     font-size: 24px;
     font-weight: 400;
+    line-height: 1.5;
 }
 
 .navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
-.navbar a {
-    text-decoration: none;
+.navbar__item {
+    margin-right: 50px;
 }
 
 .navbar__link {
-    padding: 0 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.navbar__item:last-child {
+    margin-right: 0;
+}
+
+/* Header
+================== */
+.header {
+    height: 100vh;
+
+    background-image: url(../images/header/background.jpg);
+    background-color: #555555;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: hard-light;
 
     color: #fff;
 }
 
-.button {
-    padding: 14px 35px;
-    margin: 6px 0;
-}
-
 .header-info {
-    margin-bottom: 240px;
+    margin-top: 200px;
+
+    text-align: left;
 }
 
 .header-info__title {
-    margin: 0;
     margin-bottom: 30px;
 
+    font-family: 'Gelasio', serif;
     font-size: 65px;
     font-weight: 700;
     line-height: 1.2;
+
+    color: #fff;
 }
 
 .header-info__text {
-    max-width: 460px;
-    height: auto;
+    max-width: 450px;
 
-    margin: 0;
     margin-bottom: 40px;
 
     opacity: 0.6;
 }
 
-.button--info {
-    padding: 18px 45px;
+/* Location
+==================== */
+/* .location__inner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} */
+
+.title {
+    margin-top: 140px;
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+.text {
+    margin-bottom: 50px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.location__cards {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card__item {
+    width: 33.3333%;
+    max-width: 360px;
+    height: 500px;
+    text-align: center;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card__item:hover {
+    box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.08);
+}
+
+.card__title {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 1.5;
 }
