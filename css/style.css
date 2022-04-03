@@ -44,6 +44,13 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #C9453B;
     border: none;
     border-radius: 5px;
+
+    cursor: pointer;
+    transition: background-color .2s linear;
+}
+
+.button:hover {
+    background-color: #8a3029;
 }
 
 .button--info {
@@ -82,6 +89,11 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.5;
+    transition: .2s linear;
+}
+
+.navbar__link:hover {
+    color: #C9453B;
 }
 
 .navbar__item:last-child {
@@ -160,6 +172,8 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     cursor: pointer;
+
+    transition: .2s linear;
 }
 
 .card__item:hover {
