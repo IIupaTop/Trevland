@@ -185,3 +185,69 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 24px;
     line-height: 1.5;
 }
+
+/* Offers
+==================== */
+.offers__sliders {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.offer__item {
+    width: 20%;
+    max-width: 260px;
+    height: 335px;
+
+    margin-bottom: 50px;
+
+    border-radius: 10px;
+}
+
+.offer__item:first-child{
+    opacity: .6;
+}
+
+.offer__title {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.offer__info, .offer__local, .offer__rating {
+    margin-bottom: 5px;
+
+    display: flex;
+}
+
+.local__name {
+    margin-left: 10px;
+    margin-right: 50px;
+
+    opacity: .6;
+}
+
+.offer__rating {
+    margin-left: 0;
+}
+
+.rating__amout {
+    margin-left: 10px;
+}
+
+.offer__duration {
+    margin-bottom: 5px;
+}
+
+.duration__text {
+    opacity: 0.6;
+}
+
+.offer__text {
+    font-weight: 500;
+}
+
+.person {
+    font-weight: 400;
+    opacity: 0.6;
+}
