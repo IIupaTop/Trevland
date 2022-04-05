@@ -251,3 +251,38 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     opacity: 0.6;
 }
+
+.slider__nav {
+    display: flex;
+    justify-content: center;
+}
+
+.slider__nav button {
+    background-color: inherit;
+    border: none;
+
+    cursor: pointer;
+}
+
+.slider__nav img {
+    width: 12px;
+    height: 10px;
+}
+
+.arrow-left {
+    margin-right: 50px;
+}
+
+.arrow-right {
+    margin-left: 50px;
+}
+
+.status-bar span {
+    position: relative;
+    content: "";
+    width: 75px;
+    height: 5px;
+
+    background: rgba(201, 69, 59, 0.1);
+
+}
