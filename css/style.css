@@ -277,15 +277,37 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 50px;
 }
 
-.status-bar span {
+.status-bar {
+    width: 225px;
     position: relative;
+}
+
+.status-bar span, span::before, span::after {
+    position: absolute;
     content: "";
     width: 75px;
     height: 5px;
 
+    top: 5px;
+    left: 75px;
+
     background: rgba(201, 69, 59, 0.1);
+    border-radius: 10px;
+
+    cursor: pointer;
 
 }
+span::before {
+    top: 0;
+    left: -75px;
+}
+
+span::after {
+    top: 0;
+    left: 75px;;
+}
+
+
 
 /* Blog & News
 ========================== */
