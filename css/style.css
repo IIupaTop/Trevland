@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .location__cards {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 20px;
@@ -511,4 +511,30 @@ span::after {
 .form__button {
     width: 100px;
     height: 45px;
+}
+
+/* Media
+=================================== */
+
+@media (max-width: 1614px) {
+    .location__cards {
+        display: block;
+    }
+
+    .card__item {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    .articles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .form__input {
+        margin-bottom: 20px;
+    }
 }
